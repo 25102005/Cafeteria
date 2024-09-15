@@ -1,0 +1,25 @@
+.product-page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 2rem;
+
+    &-carousel,
+    &-detail-wrapper{
+        width: 50%;
+    }
+
+    &-detail-title{
+        font-size: 1.5rem;
+    }
+
+    &-detail-price{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    &-detail-discount{
+        font-size: 1.5rem ;
+        color: #550a00;
+    }
+}

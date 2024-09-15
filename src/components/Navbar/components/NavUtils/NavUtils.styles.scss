@@ -1,0 +1,15 @@
+.nav-Utils {
+    display: flex;
+
+    a{
+        color: #550a00;
+        font-size: 1.65rem;
+        padding: 0.5rem 1rem;
+        align-items: center;
+        &:hover{
+            border-bottom: 10px solid#550a00;
+        }
+    }
+    
+    
+}
