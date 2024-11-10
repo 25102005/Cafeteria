@@ -1,10 +1,10 @@
-import { FaHeart } from "react-icons/fa";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
 import './NavUtils.styles.scss';
+import { ShoppingCart } from "../ShoppingCart/ShoppingCart";
 const NavUtils = () =>{
     return <div className="nav-Utils">
-        <a href="favoritos"><FaHeart /></a>
-        <a href="pedidos"><FaCartShopping /></a>
+        <a href="favoritos"><FaRegHeart /></a>
+        <ShoppingCart/>
     </div>
 }
 

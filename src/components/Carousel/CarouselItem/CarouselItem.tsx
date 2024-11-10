@@ -1,19 +1,29 @@
 import { FC } from 'react';
-import './CarouselItem.syles.scss';
 import { Tag } from '../../Tag/Tag';
 
-export interface CarouselItemProps{
+import './CarouselItem.syles.scss';
+
+export interface CarouselItemProps {
     imageUrl: string;
     title: string;
 }
 
-const CarouselItem: FC<CarouselItemProps>=({imageUrl,title})=>{
+const CarouselItem: FC<CarouselItemProps> = ({
+    imageUrl,
+    title
+}) => {
     return <div className='carousel-item'>
-        <img className='carousel-item-image' src={imageUrl} alt={title}  />
+        <img 
+            className='carousel-item-image'
+            src={imageUrl} 
+            alt="item" />
         <div className='carousel-item-tag'>
-        <Tag color= 'black' backgroundColor= ' white' label={title}/>
+            <Tag 
+                color='white'
+                backgroundColor='black'
+                label={title} />
         </div>
     </div>
-
 }
-export {CarouselItem};
+
+export { CarouselItem };
