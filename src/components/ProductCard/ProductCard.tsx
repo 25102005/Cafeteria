@@ -16,6 +16,7 @@ export interface ProductCardProps {
 }
 
 const ProductCard: FC<ProductCardProps> = ({
+    title,
     imagesUrl,
     description,
     price,
@@ -25,6 +26,9 @@ const ProductCard: FC<ProductCardProps> = ({
 }) => {
     return <a className="product-card"
         href={`/product/${id}`}>
+        <div className="product-card-title">
+        {title}
+        </div>
         <img
             className="product-card-img" 
             src={imagesUrl[0]}

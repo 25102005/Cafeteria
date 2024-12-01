@@ -5,7 +5,7 @@ import {  catalogpos } from "../../data/catalogpos";
 
 
 const heroPostresPage ={
-    imageUrl: 'https://img.freepik.com/fotos-premium/tazon-granola-yogur-bayas-frescas-sobre-fondo-oscuro-desayunos-saludables-ia-generativa_874904-3835.jpg',
+    imageUrl: 'https://img.freepik.com/fotos-premium/pastel-chocolate-sobre-fondo-oscuro-vista-superior-espacio-copia-chocolate-casero-clasico-ia-generativa_874904-3886.jpg',
   imageText: 'LOS MEJORES POSTRES SOLO CON NOSOTROS.',
   headline: 'LOS MEJORES POSTRES',
   button: {

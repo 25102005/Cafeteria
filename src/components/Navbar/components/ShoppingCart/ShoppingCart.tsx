@@ -25,6 +25,6 @@ const ShoppingCart = () => {
             <RiShoppingCart2Line />
         </IconLink>
     </div>
-}
+};
 
 export { ShoppingCart };

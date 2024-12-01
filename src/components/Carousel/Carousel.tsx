@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { CarouselItem, CarouselItemProps } from './CarouselItem/CarouselItem';
 import './Carousel.styles.scss';
-
+import { useNavigate } from 'react-router-dom';
 
 interface CarouselProps {
     title: string;
@@ -9,18 +9,23 @@ interface CarouselProps {
 }
 
 const Carousel: FC<CarouselProps> = ({ title, items }) => {
-    return <div className='carousel'>
-        <h2 className='carousel-title'>{title}</h2>
-        <div className='carousel-items-container'>
-            {
-                items.map((item) =>{
-                    return <CarouselItem 
-                        imageUrl={item.imageUrl} 
-                        title={item.title}/>
-                })
-            }
+    const navigate = useNavigate();
+
+    return (
+        <div className="carousel">
+            <h2 className="carousel-title">{title}</h2>
+            <div className="carousel-items-container">
+                {items.map((item) => (
+                    <CarouselItem
+                        key={item.id}
+                        imageUrl={item.imageUrl}
+                        title={item.title}
+                        onClick={() => navigate(`/product/${item.id}`)} // Navegación dinámica
+                        id={item.id}                    />
+                ))}
+            </div>
         </div>
-    </div>
+    );
 };
 
 export { Carousel };

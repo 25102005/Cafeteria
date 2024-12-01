@@ -1,12 +1,24 @@
 import { CarouselItemProps } from "../components/Carousel/CarouselItem/CarouselItem";
 
 export const sales: CarouselItemProps[]= [
-    {imageUrl: 'https://cafesabora.com/sites/default/files/cafe-moca.jpg',
-        title: '10% off'},
-    {imageUrl: 'https://sazonsula.com/wp-content/uploads/2022/03/receta-frappe-de-mango-sazon-sula.jpg',
-        title: '3% cashback'},
-    {imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LxQO6gtST29unqp4rrUR5-OKh5-ffsE3IA&s',
-        title: '3x2'},
-    {imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3O0HOD8p1NG-BId9dVL6SfI7dk7__cwI4Q&s',
-        title: 'Hot sales'}
+    {
+        imageUrl: 'https://images.mrcook.app/recipe-image/0191e833-22bb-79db-8d6a-4c9f9574cc8d?cacheKey=VGh1LCAxMiBTZXAgMjAyNCAyMTo0NTo1NCBHTVQ=',
+        title: '10% off',
+        id: "fluffyHotcakes2024"
+    },
+    {
+        imageUrl: 'https://tofuu.getjusto.com/orioneat-local/resized2/sRzBQNCr67EnoGLRK-300-x.webp',
+        title: '15% off',
+        id: "icedCoffeeDelight"
+    },
+    {
+        imageUrl: 'https://editorialtelevisa.brightspotcdn.com/40/51/06010fe14d37b41bb10bf0cc9013/gelatina-de-3-leches.jpg',
+        title: '5% off',
+        id: "fruitJellyDelight"
+    },
+    {
+        imageUrl: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf9ilYygnzMsdUDoJpysf8bg7BZp7wJulZrAl2orqUzL3j0A5I',
+        title: '3x2',
+        id: "christmasChocoPops"
+    }
 ];

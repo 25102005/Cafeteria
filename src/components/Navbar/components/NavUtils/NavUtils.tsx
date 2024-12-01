@@ -1,11 +1,16 @@
-import { FaRegHeart } from "react-icons/fa";
 import './NavUtils.styles.scss';
 import { ShoppingCart } from "../ShoppingCart/ShoppingCart";
-const NavUtils = () =>{
-    return <div className="nav-Utils">
-        <a href="favoritos"><FaRegHeart /></a>
-        <ShoppingCart/>
-    </div>
-}
+import { Favorites } from "../Favorites/Favorites";
+import { AboutUs } from '../AboutUs/AboutUs';
 
-export {NavUtils};
+const NavUtils: React.FC = () => {
+    return (
+        <div className="nav-Utils">
+            <AboutUs/>
+            <Favorites />
+            <ShoppingCart />
+        </div>
+    );
+};
+
+export { NavUtils };

@@ -1,20 +1,35 @@
-$carousel-item-heigh: 30rem;
+$carousel-item-height: 30rem;
 
 .carousel-item {
     flex: 1 0 35%;
-    height: $carousel-item-heigh;
+    height: $carousel-item-height;
     display: inline-block;
     margin: 5px;
 
     &-image {
         width: 100%;
-        height: $carousel-item-heigh;
-        max-height: $carousel-item-heigh;
+        height: $carousel-item-height;
+        max-height: $carousel-item-height;
     }
 
     &-tag {
         position: relative;
         bottom: 4rem;
         left: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        flex: 1 0 80%; 
+        height: 20rem; 
+
+        &-image {
+            height: 20rem; 
+            max-height: 20rem;
+        }
+
+        &-tag {
+            bottom: 2rem; 
+            left: 1rem;
+        }
     }
 }

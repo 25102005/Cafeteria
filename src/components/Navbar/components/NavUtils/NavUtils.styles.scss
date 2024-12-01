@@ -1,15 +1,24 @@
 .nav-Utils {
     display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 1rem;
 
-    a{
+    a {
         color: #550a00;
-        font-size: 1.65rem;
+        font-size: 1.5rem; 
         padding: 0.5rem 1rem;
-        align-items: center;
-        &:hover{
-            border-bottom: 10px solid#550a00;
+
+        &:hover {
+            border-bottom: 5px solid #550a00;
         }
     }
-    
-    
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column; 
+        a {
+            font-size: 1.7rem; 
+            padding: 0.3rem 0.5rem;
+        }
+    }
 }

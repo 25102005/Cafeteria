@@ -13,7 +13,7 @@ interface IconLinkProps {
 const IconLink: FC<IconLinkProps> = ({
     label,
     labelTextColor = 'white',
-    labelBackgroundColor = '#0071ae',
+    labelBackgroundColor = '#550a00',
     href,
     children
 }) => {

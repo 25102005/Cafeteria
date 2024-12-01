@@ -1,17 +1,37 @@
 .footer {
-    background-color: #e2cfcd;
-    padding: 3rem;
-    text-align: center;
-    color: #550a00;
-    
-  
-    &__content {
-      max-width: 1200px;
-      margin: 0 auto;
+  background-color: #e2cfcd;
+  padding: 1.5rem;
+  text-align: center;
+  color: #550a00;
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  &__icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    a {
+      color: #550a00;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #8b0000;
+      }
     }
-  
-    p {
-      margin: 0;
-      font-size: 1rem;
+
+    .footer__icon {
+      display: inline-block;
     }
   }
+}

@@ -1,11 +1,18 @@
-import './Menu.styles.scss'
-const Menu = () =>{
-    return <div className="navbar-menu">
-        <a href="/desayunos">DESAYUNOS</a>
-        <a href="/comidas">COMIDAS</a>
-        <a href="/postres">POSTRES</a>
-        <a href="/especiales">ESPECIALES</a>
-    </div>
-}
+import './Menu.styles.scss';
 
-export {Menu};
+const Menu = () => {
+    const navigate = (path: string) => {
+        window.location.href = path; // Navegación básica; puedes cambiarlo si usas React Router
+    };
+
+    return (
+        <div className="navbar-menu">
+            <div onClick={() => navigate('/desayunos')}>DESAYUNOS</div>
+            <div onClick={() => navigate('/comidas')}>COMIDAS</div>
+            <div onClick={() => navigate('/postres')}>POSTRES</div>
+            <div onClick={() => navigate('/especiales')}>ESPECIALES</div>
+        </div>
+    );
+};
+
+export { Menu };

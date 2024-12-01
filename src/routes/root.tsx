@@ -9,6 +9,9 @@ import { ProductPage } from "../pages/product/Product";
 import { Postrespage } from "../pages/postres/Postres";
 import { Checkout } from "../pages/checkout/checkout";
 import { ShoppingCartPage } from "../pages/shoppingCart/ShoppingCart";
+import { FavoritesPage } from "../pages/Favorites/Favorites";
+import { Especialespage } from "../pages/especiales/Especiales";
+import { AboutUsPage } from "../pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,10 @@ const router = createBrowserRouter([
     element: (
       <Homepages />
     ),
+  },
+  {
+    path: "/about-us",
+    element: <AboutUsPage />,
   },
   {
     path: "DESAYUNOS",
@@ -30,12 +37,20 @@ const router = createBrowserRouter([
     element: <Postrespage/>,
   },
   {
+    path: "ESPECIALES",
+    element: <Especialespage/>,
+  },
+  {
     path: "product/:productId",
     element: <ProductPage/>
   },
   {
     path: "shopping-cart",
     element: <ShoppingCartPage />
+  },
+  {
+    path: "favorites",
+    element: <FavoritesPage />
   },
   {
     path: "checkout",

@@ -5,7 +5,7 @@ import {  catalogbebidas } from "../../data/catalogbebidas";
 
 
 const heroBebidasPage ={
-    imageUrl: 'https://img.freepik.com/fotos-premium/tazon-granola-yogur-bayas-frescas-sobre-fondo-oscuro-desayunos-saludables-ia-generativa_874904-3835.jpg',
+    imageUrl: 'https://static.vecteezy.com/system/resources/previews/001/855/122/non_2x/row-of-iced-coffees-free-photo.jpg',
   imageText: 'TIENES PRISA EN NUESTRA CAFETERÍA TE LLEVARAS UNA BEBIDA EXCELENTE Y DELICIOSA.',
   headline: 'LAS MEJORES BEBIDAS',
   button: {
