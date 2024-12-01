@@ -1,14 +1,34 @@
 .navbar-menu {
     display: flex;
-   a{
-    text-decoration: none;
-    color: black;
-    margin: 1rem;
-    padding: 0.5rem 1rem;
-    &:hover{
-        border-bottom: 10px solid#550a00;
+    flex-direction: row; /* Predeterminado: horizontal para computadoras */
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-bottom: 10px solid #550a00;
+        }
     }
-   }
 
+    @media (max-width: 768px) {
+        flex-direction: column; 
+        align-items: center;
+        gap: 1rem; 
+        padding: 1rem 0;
 
+        a {
+            width: 100%; 
+            text-align: center;
+        }
+    }
 }
